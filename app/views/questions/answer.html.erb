@@ -1,0 +1,29 @@
+<h2 class=title>Stupid Coach</h2>
+
+
+<div class="question">
+<h2><%= @question %></h2>
+<h2 class=speaker>-You</h2>
+</div>
+<br>
+
+<%
+def coach_answer(your_message)
+  coach_answer = ""
+  if your_message.to_s.end_with?('?')
+    coach_answer += "Silly question, get dressed and go to work!"
+  else
+    coach_answer += "I don't care, get dressed and go to work!"
+  end
+  coach_answer = "Great!" if your_message.to_s.upcase == "I AM GOING TO WORK"
+  coach_answer
+end
+%>
+
+<div class="answer">
+<h2><%= coach_answer(@question) %></h2>
+<h2 class=speaker>-Your coach</h2>
+</div>
+<br>
+<br>
+<%= link_to "Ask a new question", ask_path %>

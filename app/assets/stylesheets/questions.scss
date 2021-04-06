@@ -1,0 +1,35 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$gray: #F4F4F4;
+
+ body {
+   background: $gray; // Using this variable
+   font-size: 12px;
+   font-weight: lighter;
+}
+
+ .title {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 10px;
+  margin: 10px;
+}
+
+.question {
+  padding: 10px;
+  margin: 10px;
+  padding-left-color: grey;
+}
+
+.answer {
+  background-color: #FFFFE1;
+  padding: 10px;
+  margin: 10px;
+  padding-left-color: grey;
+}
+
+.speaker {
+  font-style: italic;
+}
